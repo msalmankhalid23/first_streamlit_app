@@ -16,9 +16,8 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
 
 #To debug issue
-streamlit.write("Printing fruits selected")
-fruits_selected2 = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.Fruit), ['Avocado', 'Strawberries'])
-streamlit.write(*fruits_selected2)
+#streamlit.write("Printing fruits selected")
+#streamlit.write(*fruits_selected)
 
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
